@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/activity_main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="hu.trigary.percentagebarseekers.MainActivity">
+	<LinearLayout android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:paddingLeft="@dimen/activity_horizontal_margin"
+				  android:paddingRight="@dimen/activity_horizontal_margin"
+				  android:paddingTop="@dimen/activity_vertical_margin"
+				  android:paddingBottom="@dimen/activity_vertical_margin"
+				  android:orientation="vertical">
+		
+		<TextView android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:textColor="@android:color/black"
+				  android:textSize="25sp"
+				  android:gravity="center"
+				  android:text="No 'default' seek bar"/>
+		
+		<hu.trigary.percentagebarseekers.PercentageBar android:layout_width="match_parent"
+													   android:layout_height="40dp"
+													   android:id="@+id/colorPercentageBar"
+													   android:paddingTop="4dp"
+													   android:paddingBottom="8dp"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/redSeekBar"
+				 android:max="999"
+				 android:progress="333"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/greenSeekBar"
+				 android:max="999"
+				 android:progress="333"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/blueSeekBar"
+				 android:max="999"
+				 android:progress="333"/>
+		
+		<Space android:layout_width="match_parent"
+			   android:layout_height="32dp"/>
+		
+		<TextView android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:textColor="@android:color/black"
+				  android:textSize="25sp"
+				  android:gravity="center"
+				  android:text="Gray is the 'default' category"/>
+		
+		<hu.trigary.percentagebarseekers.PercentageBar android:layout_width="match_parent"
+													   android:layout_height="40dp"
+													   android:id="@+id/grayPercentageBar"
+													   android:paddingTop="4dp"
+													   android:paddingBottom="8dp"
+													   app:drawOutline="true"
+													   app:outlineColor="@android:color/darker_gray"
+													   app:outlineWidth="1dp"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/blackSeekBar"
+				 android:max="999"
+				 android:progress="0"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/graySeekBar"
+				 android:max="999"
+				 android:progress="999"/>
+		
+		<SeekBar android:layout_width="match_parent"
+				 android:layout_height="wrap_content"
+				 android:id="@+id/whiteSeekBar"
+				 android:max="999"
+				 android:progress="0"/>
+		
+	</LinearLayout>
+</ScrollView>

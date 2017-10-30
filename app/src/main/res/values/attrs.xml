@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="PercentageBar">
+		<attr name="drawOutline" format="boolean"/>
+		<attr name="outlineColor" format="color"/>
+		<attr name="outlineWidth" format="dimension"/>
+		<attr name="maxValue" format="integer"/>
+	</declare-styleable>
+</resources>
